@@ -1,5 +1,8 @@
 # Book Recommender System 📚
 
+## Here's how it turned out:
+    ![Screenshot from 2024-07-18 14-07-51](https://github.com/user-attachments/assets/raw/main/ed71a345-9bba-47ae-8dac-840c633c81f9.png)
+
 ## Description
 This project implements a Book Recommender System using Streamlit, where users can explore popular books, get recommendations based on book similarity scores using collaborative filtering, and manage their "To Read" list.
 
@@ -33,7 +36,4 @@ This project implements a Book Recommender System using Streamlit, where users c
 3. **Run the Application:**
    ```bash
    streamlit run app.py
-## Here's how it turned out:
-    ![Screenshot from 2024-07-18 14-07-51](https://github.com/user-attachments/assets/raw/main/ed71a345-9bba-47ae-8dac-840c633c81f9.png)
-
 
