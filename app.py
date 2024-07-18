@@ -31,12 +31,9 @@ def add_to_read_list(book_title):
         st.session_state.to_read_list.append({"title": book_title, "read": False})
         st.success(f"Added '{book_title}' to your To Read list!")
 
+st.title("Book Recommender System 📚")
 st.set_page_config(
-    page_title="Book Recommender System",
-    page_icon="📚",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+    page_icon="📚")
 
 st.sidebar.info("""
 ### 🚀 Welcome to The Book Recommender System! 
@@ -46,6 +43,20 @@ st.sidebar.header("Navigation")
 
 # Add sections to the sidebar
 section = st.sidebar.radio("Go to", ["Home", "Recommend", "To Read List"])
+
+st.markdown(
+    """
+    <style>
+    .css-145kmo2 {
+        width: 250px;
+    }
+    .css-145kmo2 div[role="button"] {
+        pointer-events: none;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # Custom CSS for cards
 st.markdown(
