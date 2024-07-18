@@ -31,8 +31,12 @@ def add_to_read_list(book_title):
         st.session_state.to_read_list.append({"title": book_title, "read": False})
         st.success(f"Added '{book_title}' to your To Read list!")
 
-# Set up the main interface
-st.title("Book Recommender System 📚")
+st.set_page_config(
+    page_title="Book Recommender System",
+    page_icon="📚",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
 st.sidebar.info("""
 ### 🚀 Welcome to The Book Recommender System! 
