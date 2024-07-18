@@ -44,20 +44,6 @@ st.sidebar.header("Navigation")
 # Add sections to the sidebar
 section = st.sidebar.radio("Go to", ["Home", "Recommend", "To Read List"])
 
-st.markdown(
-    """
-    <style>
-    .css-145kmo2 {
-        width: 250px;
-    }
-    .css-145kmo2 div[role="button"] {
-        pointer-events: none;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 # Custom CSS for cards
 st.markdown(
     """
