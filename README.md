@@ -1,7 +1,7 @@
 # Book Recommender System 📚
 
 ## Description
-This project implements a Book Recommender System using Streamlit, where users can explore popular books, get recommendations based on book similarity scores using collaborative filtering, and manage their "To Read" list.
+This project implements a Book Recommender System using Streamlit[https://ultimate-brs.streamlit.app/], where users can explore popular books, get recommendations based on book similarity scores using collaborative filtering, and manage their "To Read" list.
 
 ## Features
 - **Home Page:**
