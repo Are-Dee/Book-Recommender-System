@@ -27,3 +27,9 @@ This project implements a Book Recommender System using Streamlit, where users c
    ```bash
    git clone https://github.com/your_username/book-recommender-system.git
    cd book-recommender-system
+2. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+3. **Run the Application:**
+   ```bash
+   streamlit run app.py
