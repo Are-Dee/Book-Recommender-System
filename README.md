@@ -17,7 +17,7 @@ This project implements a Book Recommender System using Streamlit, where users c
   - Allows users to mark books as read/unread.
 
 ## Popularity-Based System
-- The Home Page showcases popular books based on average ratings from users who have rated more than 250 books. The top 50 most popular books are displayed.
+- The Home Page showcases popular books based on average ratings from users who have rated more than 250 books. The top 100 most popular books are displayed.
 
 ## Collaborative Filtering
 - The Recommendation Page utilizes collaborative filtering to recommend books based on similarity scores between books. It calculates the similarity between selected books and suggests the top 4 most similar books.
