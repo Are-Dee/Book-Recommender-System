@@ -1,12 +1,25 @@
 import streamlit as st
 import pickle
 import numpy as np
+import zipfile
+
+# Function to extract and load the pickle file from a zip
+def load_pickle_from_zip(zip_path, pickle_filename):
+    with zipfile.ZipFile(zip_path, 'r') as z:
+        with z.open(pickle_filename) as f:
+            return pickle.load(f)
 
 # Load the pre-trained models and data
-popular_df = pickle.load(open('popular.pkl', 'rb'))
-pt = pickle.load(open('pt.pkl', 'rb'))
-books = pickle.load(open('books.pkl', 'rb'))
-similarity_scores = pickle.load(open('similarity_scores.pkl', 'rb'))
+with open('popular.pkl', 'rb') as f:
+    popular_df = pickle.load(f)
+with open('pt.pkl', 'rb') as f:
+    pt = pickle.load(f)
+
+# Use the function to load books.pkl from the zip file
+books = load_pickle_from_zip('books_pkl.zip', 'books.pkl')
+
+with open('similarity_scores.pkl', 'rb') as f:
+    similarity_scores = pickle.load(f)
 
 # Initialize session state to store the "To Read" list
 if 'to_read_list' not in st.session_state:
