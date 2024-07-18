@@ -34,6 +34,6 @@ This project implements a Book Recommender System using Streamlit, where users c
    ```bash
    streamlit run app.py
 ## Here's how it turned out:
-    ![Screenshot from 2024-07-18 14-07-51](https://github.com/user-attachments/assets/ed71a345-9bba-47ae-8dac-840c633c81f9)
+    ![Screenshot from 2024-07-18 14-07-51](https://github.com/user-attachments/assets/raw/main/ed71a345-9bba-47ae-8dac-840c633c81f9.png)
 
 
