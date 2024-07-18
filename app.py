@@ -30,12 +30,12 @@ def add_to_read_list(book_title):
     if book_title not in [book['title'] for book in st.session_state.to_read_list]:
         st.session_state.to_read_list.append({"title": book_title, "read": False})
         st.success(f"Added '{book_title}' to your To Read list!")
-
-st.title("Book Recommender System 📚")
+        
 st.set_page_config(
     page_title="Book Recommender System",
     page_icon="📚"
 )
+st.title("Book Recommender System 📚")
 
 st.sidebar.info("""
 ### 🚀 Welcome to The Book Recommender System! 
